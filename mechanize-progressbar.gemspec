@@ -8,4 +8,7 @@ Gem::Specification.new do |s|
   s.summary     = "Fork of existing mechanize-progressbar gem with added support for Mechanize 2.6"
 
   s.files = Dir["lib/**/*"]
+
+  s.add_dependency('mechanize')
+  s.add_dependency('progressbar')
 end
