@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.authors     = "Jakub Bogacz"
   s.summary     = "Fork of existing mechanize-progressbar gem with added support for Mechanize 2.6"
 
-  s.files = Dir["{app,config,db,lib}/**/*"]
+  s.files = Dir["lib/**/*"]
 end
