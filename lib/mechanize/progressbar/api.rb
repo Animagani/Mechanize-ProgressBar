@@ -33,11 +33,9 @@ module MechanizeProgressBarAPI
     if block_given?
       begin
         yield mech
-      rescue Exception, StandardError
+      ensure
         MechanizeProgressBar.unregister(mech)
-        raise
       end
-      MechanizeProgressBar.unregister(mech)
     else
       MechanizeProgressBar.unregister_next_init(mech)
     end
